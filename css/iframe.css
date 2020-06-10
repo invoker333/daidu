@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+iframe {
+    border: none;
+}
+
+.base {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.child {
+    display: flex;
+    /*点击穿透*/
+    pointer-events: auto;
+    position: fixed;
+    min-width: 300px;
+    bottom: 0;
+    flex-direction: column-reverse;
+    left: 0;
+    transform: scale(0.6);
+    margin-bottom: -76px;
+    margin-left: -60px;
+    border: solid 1px #afa;
+}
+
+.hideChild {
+    margin-bottom: -4px;
+}
+
+.rightWindow {
+    right: 0;
+    left: unset;
+    margin-right:  -60px;
+}
+
+.memu {
+    display: flex;
+}
+
+.memu div {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.iframe {
+    width: 100%;
+    height: 360px;
+}
+
+.hide {
+    display: none;
+}
